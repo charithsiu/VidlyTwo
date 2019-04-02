@@ -1,0 +1,20 @@
+﻿
+@model VidlyTwo.Models.Customer
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name</h2>
+<ul>
+    <li>@Model.MembershipType</li>
+    @if (!@Model.BDate.Equals(null))
+    {
+        <li>@Model.BDate.Value.Date.ToShortDateString()</li>
+      
+         
+    }
+
+
+</ul>
+
